@@ -74,4 +74,10 @@ class ProductController extends Controller
         return response()->json();
 
    }
+
+   function cart() {
+    $products = Product::query()->paginate(12);
+    $carts = Cart::query()->where('user_id' , Auth::user()->id)->whereNull('order_id')->get();
+      return view('clinet.cart' , compact('carts' , 'products'));
+   }
 }

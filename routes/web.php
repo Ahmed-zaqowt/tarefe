@@ -158,6 +158,7 @@ Route::get('/categories/{category}/products', [SubCategoryController::class, 'pr
                 Route::get('/' , 'index')->name('index');
                 Route::get('/show-product/{id}' , 'showproduct')->name('showproduct');
                 Route::post('/add-to-cart' , 'addtocart')->name('addtocart');
+                Route::get('/cart' , 'cart')->name('cart');
                 Route::get('/favorite' , 'favorite')->name('favorite');
                 Route::post('/add-to-card' , 'addToCard')->name('addToCard');
                 Route::post('/add-to-favorite' , 'addToFavorite')->name('addToFavorite');
