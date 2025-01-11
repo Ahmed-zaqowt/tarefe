@@ -31,4 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'lahzah' => [
+        'api_key' => env('LAHZAH_API_KEY'),
+        'secret_key' => env('LAHZAH_SECRET_KEY'),
+        'base_url' => env('LAHZAH_BASE_URL'),
+    ],
+
 ];

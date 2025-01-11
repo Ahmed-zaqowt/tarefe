@@ -265,10 +265,7 @@
                             <div class="px-2 py-3 bg-white rounded-md shadow-md shadow-gray-300">
                                 <h1 class="text-start text-lg text-purple-800">موجز الطلب</h1>
                                 <div class="Check w-full overflow-y-auto my-2">
-                                    <div class="flex justify-between items-center">
-                                        <p class="text-sm font-medium text-black">سعر الوحدة</p>
-                                        <p class="text-sm text-gray-400 line-through">SR70.00</p>
-                                    </div>
+
                                     <div class="flex justify-between items-center">
                                         <p class="text-sm text-black">إجمالي المبلغ:</p>
                                         <p class="font-medium text-black">SR90.00</p>
@@ -277,103 +274,17 @@
                                 </div>
                             </div>
 
-                            <div class="px-2 py-3 my-2 bg-white rounded-md shadow-md shadow-gray-300">
-                                <p class="flex justify-start items-center gap-2 text-black"> <span
-                                        class="text-purple-800">16</span> نقاط
-                                    مكافأة <svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                        viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                        <path
-                                            d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z" />
-                                    </svg></p>
-                            </div>
+
 
                             <div class="ConfirmRequest px-2 py-3 my-2 bg-white rounded-md shadow-md shadow-gray-300">
                                 <form action="" class="w-full">
-                                    <label for="" class="text-black">رمز القسيمة</label>
-                                    <p class="text-gray-500" style="font-size: 13px;">رسم الشحن</p>
-                                    <div class="flex justify-between items-center my-1">
-                                        <input type="text" name="" class="rounded-md">
-                                        <button
-                                            class="bg-purple-800 text-white p-2  rounded-md transition-all duration-200 hover:bg-purple-700">تقديم</button>
-                                    </div>
-                                    <label for="" class="text-black">بطاقة هدية</label>
-                                    <p class="text-gray-500" style="font-size: 13px;">"ملاحظة: سيتم خصم المبلغ المدفوع
-                                        للطلب من رصيد بطاقة الهدية بعد النقر على "متابعة</p>
-                                    <div class="flex justify-between items-center my-1">
-                                        <input type="text" name="" class="rounded-md">
-                                        <button
-                                            class="bg-purple-800 text-white p-2  rounded-md transition-all duration-200 hover:bg-purple-700">تقديم</button>
-                                    </div>
-                                    <label for="" class="text-black">رصيد المحفظة <span
-                                            class="text-sm text-gray-500">(اجمالي: $0.00)</span></label>
-                                    <div class="flex justify-between items-center my-1">
-                                        <input type="text" name="" class="rounded-md">
-                                        <button
-                                            class="bg-purple-800 text-white p-2  rounded-md transition-all duration-200 hover:bg-purple-700">تقديم</button>
-                                    </div>
+
                                     <button
                                         class="bg-purple-800 text-white mt-3 py-2 w-full rounded-md transition-all duration-200 hover:bg-purple-700"
                                         type="button" onclick="completeStep(2)">تأكيد الطلب</button>
                                 </form>
                             </div>
-                            <div class="paySafe px-2 py-3 my-2 bg-white rounded-md shadow-md shadow-gray-300">
-                                <div class="my-2">
-                                    <p class="flex justify-start items-center gap-2 text-sm text-purple-800"> <svg
-                                            xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                            <path
-                                                d="M470-320h29v-32q28-4 47.5-23t19.5-49q0-26-20-43.5T500-496v-74q10 3 16.5 10t9.5 17l36-15q-7-21-24-33.5T500-608v-32h-30v31q-28 3-47.5 20.5T403-542q0 27 20.5 45t46.5 29v79q-16-5-27-17t-15-28l-35 15q8 28 28 46t49 22v31Zm30-70v-66q11 5 19.5 12t8.5 21q0 16-8 22.5T500-390Zm-30-119q-11-5-20-12t-9-21q0-14 9-20.5t20-8.5v62ZM320-200q-117 0-198.5-81.5T40-480q0-117 81.5-198.5T320-760h320q117 0 198.5 81.5T920-480q0 117-81.5 198.5T640-200H320Zm0-80h320q83 0 141.5-58.5T840-480q0-83-58.5-141.5T640-680H320q-83 0-141.5 58.5T120-480q0 83 58.5 141.5T320-280Zm160-200Z" />
-                                        </svg>أمن الدفع</p>
-                                    <p class="text-sm text-black">
-                                        تلتزم SHEIN بحماية معلومات الدفع الخاصة بك ولا تشارك معلومات بطاقتك الائتمانية
-                                        إلا مع
-                                        مزودي خدمة الدفع الذين وافقوا على حماية معلوماتك.
-                                    </p>
-                                </div>
-                                <div class="flex items-center flex-wrap gap-3 my-2">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/15282719811871317559.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/1528273241354964734.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/15282732803587566708.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/15282732983375743706.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/15356946304173589516.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/161528368123dd7a35ad8708b0dfc74b3630526891.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/1647843326019ba9fe0ba5d8aedc45cfd968ded649.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/164811478088870ff20e6c63c81ce2f2166e0dae58.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/17193084623789a558f934389f07b55391e120d31a.png') }}"
-                                        alt="">
-                                </div>
-                                <div class="my-2">
-                                    <p class="flex justify-start items-center gap-2 text-sm text-purple-800"><svg
-                                            xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                            <path
-                                                d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
-                                        </svg> الأمان والخصوصية
-                                    </p>
-                                    <p class="text-sm text-black">يقوم شريك معالج الدفع التابع الخاص بشي إن بتخزين
-                                        تفاصيل بطاقتك الائتمانية
-                                        باستخدام تقنية تشفير البيانات المتوافقة مع معايير الصناعة. لن تقوم شي إن بتخزين
-                                        معلومات
-                                        بطاقتك الائتمانية الفعلية.</p>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="rounded-lg py-2 start-0 wow fadeInLeft">
                             <div class="showForm w-full px-3 py-4 bg-white rounded-md shadow-md shadow-gray-300">
@@ -454,27 +365,9 @@
                                         class="py-3 rounded-md border-gray-300 w-full" placeholder="الرمز البريدي*">
                                 </div>
                                 <div class="my-2">
-                                    <div class="flex justify-between items-center my-3">
-                                        <label for="" class="text-sm text-black">
-                                            <input type="checkbox" name="" id="">
-                                            جعله افتراضيا
-                                        </label>
-                                        <div class="links_ flex justify-between gap-3 ">
-                                            <a href="" class="text-sm text-purple-800">نصائح عامة للعنوان</a>
-                                            <a href="" class="text-sm text-purple-800">سياسة الخصوصية وملفات
-                                                تعريف الارتباط</a>
-                                        </div>
-                                    </div>
+
                                     <div class="btm my-3">
-                                        <p class="flex justify-start items-center gap-2 mb-2 text-purple-800"><svg
-                                                xmlns="http://www.w3.org/2000/svg" height="24px"
-                                                viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                                <path
-                                                    d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
-                                            </svg> الأمان والخصوصية</p>
-                                        <p class="text-sm text-gray-400">نحافظ على معايير الصناعة المادية والتقنية
-                                            والإدارية
-                                            لحماية معلوماتك الشخصية</p>
+
                                         <div class="flex justify-center items-center mt-4">
                                             <button
                                                 class="show_dBtn bg-purple-800 text-white py-2 px-10 transition-all duration-200 hover:bg-purple-700"
@@ -605,87 +498,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="paySafe px-2 py-3 my-2 bg-white rounded-md shadow-md shadow-gray-300">
-                                <div class="my-2">
-                                    <p class="flex justify-start items-center gap-2 text-sm text-purple-800"> <svg
-                                            xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                            <path
-                                                d="M470-320h29v-32q28-4 47.5-23t19.5-49q0-26-20-43.5T500-496v-74q10 3 16.5 10t9.5 17l36-15q-7-21-24-33.5T500-608v-32h-30v31q-28 3-47.5 20.5T403-542q0 27 20.5 45t46.5 29v79q-16-5-27-17t-15-28l-35 15q8 28 28 46t49 22v31Zm30-70v-66q11 5 19.5 12t8.5 21q0 16-8 22.5T500-390Zm-30-119q-11-5-20-12t-9-21q0-14 9-20.5t20-8.5v62ZM320-200q-117 0-198.5-81.5T40-480q0-117 81.5-198.5T320-760h320q117 0 198.5 81.5T920-480q0 117-81.5 198.5T640-200H320Zm0-80h320q83 0 141.5-58.5T840-480q0-83-58.5-141.5T640-680H320q-83 0-141.5 58.5T120-480q0 83 58.5 141.5T320-280Zm160-200Z" />
-                                        </svg>طريقة الدفع</p>
-                                    <p class="text-sm text-black mt-2">
-                                        خدمة الدفع عند الاستلام متاحة فقط عندنا يكون إجمالي الطلب بعد الخصم اكثر من
-                                        JOD0.00 وأقل من JOD177.25 يجب ملاحظة أن الإجمالي غير متضمن مصاريف الشحن والتأمين
-                                    </p>
-                                </div>
-                                <form action="" class="my-4">
-                                    <label for="payway" class="flex justify-start items-center gap-3 my-2">
-                                        <div class="flex justify-start items-center gap-3">
-                                            <input type="radio" name="pay" id="payway">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"
-                                                width="50px" fill="#5B26FB">
-                                                <path
-                                                    d="M880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720Zm-720 80h640v-80H160v80Zm0 160v240h640v-240H160Zm0 240v-480 480Z" />
-                                            </svg>
-                                        </div>
-                                        <div class="payTitle">
-                                            <p class="text-sm">بطاقة الإئتمان/الخصم</p>
-                                            <div class="flex items-center flex-wrap gap-3 my-2">
-                                                <img width="25"
-                                                    src="{{ asset('client/img/payments/15282719811871317559.webp') }}"
-                                                    alt="">
-                                                <img width="25"
-                                                    src="{{ asset('client/img/payments/1528273241354964734.webp') }}"
-                                                    alt="">
-                                                <img width="25"
-                                                    src="{{ asset('client/img/payments/15282732803587566708.webp') }}"
-                                                    alt="">
-                                                <img width="25"
-                                                    src="{{ asset('client/img/payments/15282732983375743706.webp') }}"
-                                                    alt="">
-                                                <img width="25"
-                                                    src="{{ asset('client/img/payments/15356946304173589516.webp') }}"
-                                                    alt="">
-                                                <img width="25"
-                                                    src="{{ asset('client/img/payments/161528368123dd7a35ad8708b0dfc74b3630526891.webp') }}"
-                                                    alt="">
 
-                                            </div>
-                                        </div>
-                                    </label>
-
-                                    <label for="payway2" class="flex justify-start items-center gap-3 my-2">
-                                        <div class="flex justify-start items-center gap-3">
-                                            <input type="radio" name="pay" id="payway2">
-                                            <img width="50"
-                                                src="{{ asset('client/img/payments/15282719811871317559.webp') }}"
-                                                alt="">
-                                        </div>
-                                        <div class="payTitle">
-                                            <p class="text-sm">PayPal</p>
-                                            <div class="flex justify-start items-center gap-3">
-                                                <input type="radio" name="" id="payway">
-                                                <p class="text-sm text-black">تذكر تفاصيل paypal الخاص بي</p>
-                                            </div>
-                                        </div>
-                                    </label>
-                                </form>
-
-                                <div class="my-2">
-                                    <p class="flex justify-start items-center gap-2 text-sm text-purple-800"><svg
-                                            xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                            <path
-                                                d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
-                                        </svg> الأمان والخصوصية
-                                    </p>
-                                    <p class="text-sm text-black mt-2">يقوم شريك معالج الدفع التابع الخاص بشي إن
-                                        بتخزين تفاصيل بطاقتك الائتمانية
-                                        باستخدام تقنية تشفير البيانات المتوافقة مع معايير الصناعة. لن تقوم شي إن بتخزين
-                                        معلومات
-                                        بطاقتك الائتمانية الفعلية.</p>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -694,6 +507,7 @@
             <!-- الدفع -->
             <div id="step3" class="step hidden">
                 <div class="container mx-auto mb-8">
+
                     <div class="grid grid-cols-1 md:grid-cols-[1fr,3fr] gap-1">
                         <div
                             class="rounded-lg p-2 h-fit wow fadeInRight overflow-y-auto md:sticky top-20 bottom-0 start-0">
@@ -733,64 +547,7 @@
                                         الطلب</button>
                             </div>
 
-                            <div class="paySafe px-2 py-3 my-2 bg-white rounded-md shadow-md shadow-gray-300">
-                                <div class="my-2">
-                                    <p class="flex justify-start items-center gap-2 text-sm text-purple-800"> <svg
-                                            xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                            <path
-                                                d="M470-320h29v-32q28-4 47.5-23t19.5-49q0-26-20-43.5T500-496v-74q10 3 16.5 10t9.5 17l36-15q-7-21-24-33.5T500-608v-32h-30v31q-28 3-47.5 20.5T403-542q0 27 20.5 45t46.5 29v79q-16-5-27-17t-15-28l-35 15q8 28 28 46t49 22v31Zm30-70v-66q11 5 19.5 12t8.5 21q0 16-8 22.5T500-390Zm-30-119q-11-5-20-12t-9-21q0-14 9-20.5t20-8.5v62ZM320-200q-117 0-198.5-81.5T40-480q0-117 81.5-198.5T320-760h320q117 0 198.5 81.5T920-480q0 117-81.5 198.5T640-200H320Zm0-80h320q83 0 141.5-58.5T840-480q0-83-58.5-141.5T640-680H320q-83 0-141.5 58.5T120-480q0 83 58.5 141.5T320-280Zm160-200Z" />
-                                        </svg>أمن الدفع</p>
-                                    <p class="text-sm text-black">
-                                        تلتزم SHEIN بحماية معلومات الدفع الخاصة بك ولا تشارك معلومات بطاقتك الائتمانية
-                                        إلا مع
-                                        مزودي خدمة الدفع الذين وافقوا على حماية معلوماتك.
-                                    </p>
-                                </div>
-                                <div class="flex items-center flex-wrap gap-3 my-2">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/15282719811871317559.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/1528273241354964734.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/15282732803587566708.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/15282732983375743706.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/15356946304173589516.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/161528368123dd7a35ad8708b0dfc74b3630526891.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/1647843326019ba9fe0ba5d8aedc45cfd968ded649.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/164811478088870ff20e6c63c81ce2f2166e0dae58.webp') }}"
-                                        alt="">
-                                    <img width="40"
-                                        src="{{ asset('client/img/payments/17193084623789a558f934389f07b55391e120d31a.png') }}"
-                                        alt="">
-                                </div>
-                                <div class="my-2">
-                                    <p class="flex justify-start items-center gap-2 text-sm text-purple-800"><svg
-                                            xmlns="http://www.w3.org/2000/svg" height="24px"
-                                            viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                                            <path
-                                                d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z" />
-                                        </svg> الأمان والخصوصية
-                                    </p>
-                                    <p class="text-sm text-black">يقوم شريك معالج الدفع التابع الخاص بشي إن بتخزين
-                                        تفاصيل بطاقتك الائتمانية
-                                        باستخدام تقنية تشفير البيانات المتوافقة مع معايير الصناعة. لن تقوم شي إن بتخزين
-                                        معلومات
-                                        بطاقتك الائتمانية الفعلية.</p>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="rounded-lg py-2 start-0 wow fadeInLeft">
                             <div class="w-full px-3 py-4 bg-white rounded-md shadow-md shadow-gray-300">

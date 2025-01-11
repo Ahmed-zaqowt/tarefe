@@ -14,6 +14,7 @@ use App\Http\Controllers\Dashboard\Product\ProductController;
 use App\Http\Controllers\Dashboard\Settings\Feature\FeatureController;
 use App\Http\Controllers\Dashboard\SubCategory\SubCategoryController;
 use App\Http\Controllers\Dashboard\User\UserController;
+use App\Http\Controllers\PaymentController;
 use App\Models\Company;
 use App\Models\Coupon;
 use App\Models\SubCategory;
@@ -31,6 +32,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/categories/{category}/products', [SubCategoryController::class, 'products'])->name('categories.products');
+
+Route::get('/payment', function () {
+    return view('payment');
+})->name('payment.view');
 
     Route::prefix('tarefe')->group(function(){
         Route::prefix('dashboard')->middleware('auth')->name('dash.')->group(function (){
@@ -173,7 +178,7 @@ Route::get('/categories/{category}/products', [SubCategoryController::class, 'pr
             });
 
             Route::prefix('orders')->controller(OrderController::class)->name('order.')->group(function (){
-                Route::get('/' , 'index')->name('index');
+                Route::get('/in_preparation' , 'in_preparation')->name('in_preparation');
             });
 
 
